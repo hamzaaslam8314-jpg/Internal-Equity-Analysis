@@ -281,6 +281,9 @@ st.sidebar.caption(f"{len(fdf):,} of {len(df):,} employees in view")
 # HEADER
 # ============================================================
 st.markdown("<h1 style='margin-bottom:2px;'>🧭 Internal Pay Equity & Rewards Dashboard</h1>", unsafe_allow_html=True)
+ <div style="margin-top:-8px; margin-bottom:18px; color:#6b7280; font-size:16px;">
+            <b>Developed by Hamza Aslam</b> | Executive Compensation & Benefits
+        </div>
 st.markdown("<p class='section-note'>Compensation structure, pay equity, and reward effectiveness across the workforce.</p>", unsafe_allow_html=True)
 st.markdown("")
 
