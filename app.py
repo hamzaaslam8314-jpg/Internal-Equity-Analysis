@@ -224,7 +224,7 @@ if not uploaded:
     st.markdown(
         f"""
         <div style="text-align:center; padding-top:70px;">
-        <h1 style="color:{NAVY};">🧭 Internal Pay Equity & Rewards Intelligence</h1>
+        <h1 style="color:{NAVY};">🧭 Internal Pay Equity & Rewards Intelligence Report</h1>
 
         <div style="margin-top:-8px; margin-bottom:18px; color:#6b7280; font-size:16px;">
             <b>Developed by Hamza Aslam</b> | Compensation & Benefits Professional
@@ -280,7 +280,7 @@ st.sidebar.caption(f"{len(fdf):,} of {len(df):,} employees in view")
 # ============================================================
 # HEADER
 # ============================================================
-st.markdown("<h1 style='margin-bottom:2px;'>🧭 Internal Pay Equity & Rewards Dashboard</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='margin-bottom:2px;'>🧭 Internal Pay Equity & Rewards Intelligence Report</h1>", unsafe_allow_html=True)
 st.markdown("""
 <div style="margin-top:-8px; margin-bottom:12px; color:#6b7280; font-size:15px;">
 <b>Developed by Hamza Aslam</b> | Compensation & Benefits Professional
