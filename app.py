@@ -1,5 +1,5 @@
 """
-Internal Pay Equity & Rewards Dashboard
+Internal Pay Equity & Rewards Intelligence Report
 ----------------------------------------
 Upload a compensation workbook to generate an interactive internal equity
 analysis: pay equity, compa-ratio positioning, pay-for-performance alignment,
@@ -224,7 +224,12 @@ if not uploaded:
     st.markdown(
         f"""
         <div style="text-align:center; padding-top:70px;">
-        <h1 style="color:{NAVY};">🧭 Internal Pay Equity & Rewards Dashboard</h1>
+        <h1 style="color:{NAVY};">🧭 Internal Pay Equity & Rewards Intelligence R</h1>
+        st.markdown("""
+        <div style="margin-top:-8px; margin-bottom:18px; color:#6b7280; font-size:16px;">
+        <b>Developed by Hamza Aslam</b> | Executive Compensation & Benefits
+        </div>
+""", unsafe_allow_html=True)
         <p style="color:{SLATE}; font-size:1.05rem; max-width:620px; margin:auto;">
         Upload a compensation workbook in the sidebar to generate pay equity,
         compa-ratio, performance-reward alignment, and retention analysis —
