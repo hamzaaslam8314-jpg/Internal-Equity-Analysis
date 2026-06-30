@@ -1,8 +1,7 @@
 # Total Rewards & Internal Equity Intelligence Dashboard
 
 An interactive Streamlit dashboard that turns an annual compensation /
-increment workbook into a presentation-ready internal pay equity analysis —
-built for CHRO and CEO readouts.
+increment workbook into a presentation-ready internal pay equity analysis.
 
 Upload a new workbook every year and the dashboard instantly regenerates:
 
@@ -15,7 +14,6 @@ Upload a new workbook every year and the dashboard instantly regenerates:
 - **Year-over-Year** — optional second upload to trend key metrics against last year
 - **Data Explorer** — filterable raw table with CSV export
 
-No company-specific branding is hardcoded — safe to reuse across organizations or years.
 
 ## Expected columns
 
