@@ -63,8 +63,15 @@ st.markdown(
         font-size: 0.9rem; color: {NAVY}; margin: 6px 0 16px 0; border: 1px solid #F3D2D9;
     }}
     .kpi-card {{
-        border-radius: 14px; padding: 16px 18px; color: white;
-        box-shadow: 0 2px 10px rgba(16,36,62,0.12);
+        border-radius: 14px;
+    padding: 18px 20px;
+    color: white;
+    box-shadow: 0 2px 10px rgba(16,36,62,0.12);
+
+    min-height: 145px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     }}
     .kpi-label {{ font-size: 0.80rem; opacity: 0.92; font-weight: 600; letter-spacing: 0.2px; }}
     .kpi-value {{ font-size: 1.65rem; font-weight: 800; margin-top: 2px; }}
