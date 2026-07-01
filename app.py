@@ -1191,7 +1191,7 @@ with tab_micro:
                                         "increment_pct","tenure","retention_risk",
                                         "skill_rating"], compare_df)
                     if show_c:
-                        styled = compare_df[show_c].style
+                    styled = compare_df[show_c].style
                         if "compa_ratio" in show_c:
                             styled = styled.background_gradient(subset=["compa_ratio"],
                                                                  cmap="RdYlGn", vmin=0.7, vmax=1.3)
