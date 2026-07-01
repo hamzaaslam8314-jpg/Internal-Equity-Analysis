@@ -1181,8 +1181,8 @@ compare_sel = st.multiselect(
     default=filtered_options[:min(5, len(filtered_options))]
 )
                 if compare_sel:
-                    compare_df = fdf[fdf[label_col].astype(str).isin([selected] + compare_sel)].copy()
-                    show_c = safe_cols([label_col,"designation","grade","department",
+                compare_df = fdf[fdf[label_col].astype(str).isin([selected] + compare_sel)].copy()
+                show_c = safe_cols([label_col,"designation","grade","department",
                                         "gross_salary","salary_mid","compa_ratio",
                                         "range_penetration","quartile","performance",
                                         "increment_pct","tenure","retention_risk",
