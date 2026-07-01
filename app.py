@@ -1171,25 +1171,28 @@ with tab_micro:
                 st.markdown("<div class='section-card'>", unsafe_allow_html=True)
                 section("Peer Comparison — Same Grade & Department", EMERALD)
                 compare_opts = peers[label_col].astype(str).tolist()
-# 1. Create a filtered list of options that excludes the selected individual
                 filtered_options = [o for o in compare_opts if o != selected]
 
-                # 2. Safely pass it into the widget
                 compare_sel = st.multiselect(
                     "Add specific peers to compare side-by-side",
                     options=filtered_options,
                     default=filtered_options[:min(5, len(filtered_options))]
                 )
 
-                # 3. The if statement aligns with the code above
                 if compare_sel:
-                    # 4. This line must be pushed 4 spaces FURTHER right than the 'if' statement
-                    compare_df = fdf[fdf[label_col].astype(str).isin([selected] + compare_sel)].copy()
-                show_c = safe_cols([label_col,"designation","grade","department",
-                                        "gross_salary","salary_mid","compa_ratio",
-                                        "range_penetration","quartile","performance",
-                                        "increment_pct","tenure","retention_risk",
-                                        "skill_rating"], compare_df)
+                    compare_df = fdf[
+                        fdf[label_col].astype(str).isin([selected] + compare_sel)
+                    ].copy()
+
+                    show_c = safe_cols(
+                        [label_col, "designation", "grade", "department",
+                         "gross_salary", "salary_mid", "compa_ratio",
+                         "range_penetration", "quartile", "performance",
+                         "increment_pct", "tenure", "retention_risk",
+                         "skill_rating"],
+                        compare_df
+                    )
+
                     if show_c:
                     styled = compare_df[show_c].style
                         if "compa_ratio" in show_c:
