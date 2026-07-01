@@ -1,4 +1,4 @@
-    """
+"""
 Internal Pay Equity & Rewards Intelligence Report
 --------------------------------------------------
 Upload a compensation workbook (.xlsx) to generate a fully interactive
