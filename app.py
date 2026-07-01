@@ -1171,15 +1171,17 @@ with tab_micro:
                 st.markdown("<div class='section-card'>", unsafe_allow_html=True)
                 section("Peer Comparison — Same Grade & Department", EMERALD)
                 compare_opts = peers[label_col].astype(str).tolist()
-                # 1. Create a filtered list of options that excludes the selected individual
-filtered_options = [o for o in compare_opts if o != selected]
+               # 1. Create a filtered list of options that excludes the selected individual
+                filtered_options = [o for o in compare_opts if o != selected]
 
-# 2. Safely pass it into the widget
-compare_sel = st.multiselect(
-    "Add specific peers to compare side-by-side",
-    options=filtered_options,
-    default=filtered_options[:min(5, len(filtered_options))]
-)
+                # 2. Safely pass it into the widget
+                compare_sel = st.multiselect(
+                    "Add specific peers to compare side-by-side",
+                    options=filtered_options,
+                    default=filtered_options[:min(5, len(filtered_options))]
+                )
+
+                # 3. Your next line (if compare_sel:) should start exactly here:
                 if compare_sel:
                 compare_df = fdf[fdf[label_col].astype(str).isin([selected] + compare_sel)].copy()
                 show_c = safe_cols([label_col,"designation","grade","department",
